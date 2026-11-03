@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wind Banner para a Black Friday | Pigmento Print</title>
+<meta name="description" content="Wind banner personalizado com haste de fibra de vidro, base e logomarca inclusas. 2,15 m, 3 m e 3,50 m, com preço na tela e nota fiscal. Pigmento Print, Maringá-PR.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F6; --card:#FFFFFF; --ink:#1B1340; --fg:#1B1736; --muted:#5A5873; --line:#D9DEE6;
+  --pigment:#F2542D; --pigment-dark:#C93C19; --teal:#0F8A8F; --band:#1B1340; --band-fg:#F4F1FF; --band-muted:#B7B0D9; --gold:#FFC94D;
+  --font-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --font-body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gut-l:max(16px, env(safe-area-inset-left, 0px));
+  --gut-r:max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#110D26; --card:#1B1638; --ink:#E9E4FF; --fg:#ECE9FA; --muted:#A9A4C8; --line:#2E2853;
+    --pigment:#FF6A44; --pigment-dark:#E5502B; --teal:#2BB3B8; --band:#0A0718; --band-muted:#A9A2CF; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#110D26; --card:#1B1638; --ink:#E9E4FF; --fg:#ECE9FA; --muted:#A9A4C8; --line:#2E2853;
+  --pigment:#FF6A44; --pigment-dark:#E5502B; --teal:#2BB3B8; --band:#0A0718; --band-muted:#A9A2CF; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.55;padding-bottom:76px}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--pigment);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:.95;text-wrap:balance;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(2.3rem,5.5vw,3.6rem);text-transform:uppercase;color:var(--ink)}
+.eyebrow{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+section{padding-block:64px}
+.sec-head{display:grid;gap:12px;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;text-decoration:none;border-radius:999px;padding:14px 24px;font-size:1rem;min-height:48px;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--pigment-dark);color:#fff}
+.btn-wa:hover{background:#A92F12}
+.btn-ghost{border:2px solid currentColor;color:var(--band-fg);padding:12px 22px}
+
+/* faixa do prazo */
+.deadline{background:var(--gold);color:#1B1340;font-weight:600;font-size:.95rem}
+.deadline .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 12px;padding-block:9px;text-align:center}
+.deadline b{font-weight:700}
+
+/* topo */
+.top{background:var(--band);color:var(--band-fg);border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.top img{height:26px;width:auto;display:block}
+.top .btn{padding:8px 16px;font-size:.9rem;min-height:40px}
+
+/* hero */
+.hero{background:var(--band);color:var(--band-fg);padding-block:44px 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:end}
+.hero-copy{padding-bottom:60px;display:grid;gap:20px;min-width:0}
+.hero .eyebrow{color:#7BE0E3}
+.hero h1{font-size:clamp(3.2rem,9vw,6.6rem);text-transform:uppercase;line-height:.88;font-weight:900}
+.hero h1 em{font-style:normal;color:#FF7A57}
+.hero p{color:var(--band-muted);font-size:1.12rem;max-width:48ch;margin:0}
+.hero-price{font-family:var(--font-display);font-size:1.9rem;font-weight:800;color:var(--band-fg);text-transform:uppercase;line-height:1}
+.hero-price b{color:var(--gold);font-weight:900}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--font-mono);font-size:.8rem;color:var(--band-muted)}
+.proof b{color:var(--gold);font-weight:600}
+.hero-img{justify-self:center;max-width:100%}
+.hero-img img{display:block;width:min(400px,100%);height:auto;transform-origin:50% 100%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero-copy{padding-bottom:4px}.hero-img img{width:min(270px,76vw)}}
+
+/* preços */
+.prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+@media (max-width:820px){.prices{grid-template-columns:1fr}}
+.price{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:12px;align-content:start;position:relative}
+.price.best{border:3px solid var(--pigment)}
+.price .tag{position:absolute;top:-13px;left:20px;background:var(--pigment-dark);color:#fff;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:6px}
+.price h3{font-size:2.6rem;color:var(--ink);text-transform:uppercase}
+.price .use{margin:0;color:var(--muted);font-size:.97rem;min-height:3em}
+.price .val{font-family:var(--font-display);font-weight:900;font-size:3rem;line-height:1;color:var(--ink)}
+.price .val small{font-family:var(--font-mono);font-weight:500;font-size:.8rem;color:var(--muted);letter-spacing:0}
+.price .card{margin:0;font-size:.92rem;color:var(--muted)}
+.price .btn{width:100%}
+.incl{display:flex;flex-wrap:wrap;gap:8px 22px;margin:24px 0 0;padding:0;list-style:none;color:var(--fg);font-size:.97rem}
+.incl li::before{content:"✓ ";color:var(--teal);font-weight:700}
+.note{color:var(--muted);font-size:.92rem;margin:14px 0 0}
+
+/* quantidade */
+.qty{background:var(--card);border-block:1px solid var(--line)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:.98rem}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-family:var(--font-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td b{color:var(--teal)}
+
+/* diferenciais */
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:18px}
+.tech-item{display:grid;gap:8px;align-content:start;padding-top:16px;border-top:3px solid var(--ink)}
+.tech-item h3{font-size:1.7rem;text-transform:uppercase;color:var(--ink)}
+.tech-item p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* galeria */
+.gallery{background:var(--band);color:var(--band-fg)}
+.gallery h2{color:var(--band-fg)}
+.gallery .lede{color:var(--band-muted)}
+.gallery .eyebrow{color:#7BE0E3}
+.strip{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.strip figure{flex:0 0 auto;margin:0;scroll-snap-align:start;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0));border-radius:14px;padding:14px 14px 6px}
+.strip img{display:block;height:300px;width:auto}
+
+/* passos */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:22px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;gap:6px;align-content:start}
+.steps li::before{content:counter(s);font-family:var(--font-display);font-weight:900;font-size:2.8rem;line-height:1;color:var(--pigment)}
+.steps h3{font-size:1.45rem;text-transform:uppercase;color:var(--ink)}
+.steps p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* prova social */
+.social{background:var(--card);border-block:1px solid var(--line)}
+.score{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:22px}
+.score b{font-family:var(--font-display);font-size:4rem;line-height:1;color:var(--ink)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px}
+.review{background:var(--paper);border-radius:14px;padding:20px;display:grid;gap:10px;margin:0}
+.review .stars{color:#B98200;letter-spacing:2px}
+.review blockquote{margin:0}
+.review figcaption{font-family:var(--font-mono);font-size:.8rem;color:var(--muted)}
+.logos{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:28px}
+.logos .lg{background:#fff;border-radius:12px;padding:10px 16px;height:68px;display:flex;align-items:center;border:1px solid var(--line)}
+.logos img{max-height:46px;width:auto;display:block}
+
+/* troca de tecido */
+.swap{background:var(--teal);color:#fff}
+.swap .wrap{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.swap h2{color:#fff}
+.swap p{margin:10px 0 0;max-width:60ch;color:rgba(255,255,255,.94)}
+.swap .btn-wa{background:#fff;color:#0B5F63}
+.swap .btn-wa:hover{background:#E6F4F4}
+@media (max-width:820px){.swap .wrap{grid-template-columns:1fr}}
+
+/* perguntas */
+.faq{display:grid;gap:10px;max-width:800px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px}
+.faq summary{font-weight:700;cursor:pointer;padding:14px 0;list-style-position:outside}
+.faq p{margin:0 0 16px;color:var(--muted)}
+
+/* fim */
+.end{background:var(--band);color:var(--band-fg);text-align:center}
+.end h2{color:var(--band-fg)}
+.end p{color:var(--band-muted);margin:14px auto 22px;max-width:52ch}
+footer{background:var(--band);color:var(--band-muted);padding-block:0 28px;font-size:.88rem;text-align:center}
+footer .mono{font-family:var(--font-mono);font-size:.76rem}
+footer p{margin:0 0 6px}
+
+/* barra fixa */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--band);border-top:1px solid rgba(255,255,255,.12);padding:10px var(--gut-r) calc(10px + env(safe-area-inset-bottom,0px)) var(--gut-l);display:flex;align-items:center;justify-content:center;gap:14px;color:var(--band-fg)}
+.sticky span{font-size:.9rem;line-height:1.2}
+.sticky span b{color:var(--gold)}
+.sticky .btn{padding:10px 18px;min-height:44px;font-size:.95rem;white-space:nowrap}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+</svg>
+
+<div class="deadline" id="deadline"><div class="wrap"><span id="dl-main"><b>Black Friday:</b> arte aprovada até <b>10/11</b>, bandeira pronta até 23/11</span><span id="dl-left"></span></div></div>
+
+<header class="top">
+  <div class="wrap">
+    <img src="../logo-branco.webp" alt="Pigmento Print" width="173" height="26">
+    <a class="btn btn-wa" data-wa="Quero um orçamento de wind banner" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçamento</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Wind banner personalizado · Maringá-PR · envio para todo o Brasil</span>
+      <h1 id="hero-t">Sua loja vista de longe na <em>Black Friday</em></h1>
+      <p>Bandeira completa, com haste de fibra de vidro, base, tecido dupla face e a sua logomarca aplicada. Nossa equipe ajusta a arte sem custo.</p>
+      <div class="hero-price">A partir de <b>R$229,90</b> no Pix</div>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" data-wa="Quero um orçamento de wind banner" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-ghost" href="#precos">Ver preços</a>
+      </div>
+      <div class="proof"><span><b>★ 4,9</b> no Google · 43 avaliações</span><span>Mais de 10 anos de experiência</span><span>Nota fiscal para empresas</span></div>
+    </div>
+    <div class="hero-img"><img src="../hero-flags.webp" alt="Quatro wind banners da Pigmento Print em laranja e verde-água" width="648" height="844"></div>
+  </div>
+</section>
+
+<section id="precos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Preços de novembro</span>
+      <h2>Escolha a altura. A bandeira vem completa.</h2>
+    </div>
+    <div class="prices">
+      <article class="price">
+        <h3>2,15 m</h3>
+        <p class="use">Para ambientes internos e ponto de venda.</p>
+        <div class="val">R$229,90 <small>no Pix</small></div>
+        <p class="card">ou R$244,90 em até 3x no cartão</p>
+        <a class="btn btn-wa" data-wa="Quero orçar o wind banner de 2,15 m" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçar o de 2,15 m</a>
+      </article>
+      <article class="price best">
+        <span class="tag">O mais vendido</span>
+        <h3>3,00 m</h3>
+        <p class="use">O mais pedido para frente de loja.</p>
+        <div class="val">R$249,90 <small>no Pix</small></div>
+        <p class="card">ou R$269,90 em até 3x no cartão</p>
+        <a class="btn btn-wa" data-wa="Quero orçar o wind banner de 3 m" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçar o de 3 m</a>
+      </article>
+      <article class="price">
+        <h3>3,50 m</h3>
+        <p class="use">Para eventos grandes, parques e praias.</p>
+        <div class="val">R$329,90 <small>no Pix</small></div>
+        <p class="card">ou R$349,90 em até 3x no cartão</p>
+        <a class="btn btn-wa" data-wa="Quero orçar o wind banner de 3,50 m" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçar o de 3,50 m</a>
+      </article>
+    </div>
+    <ul class="incl">
+      <li>Haste de fibra de vidro</li><li>Base para água ou areia</li><li>Tecido estampado dupla face</li><li>Logomarca aplicada</li><li>Arte ajustada sem custo</li>
+    </ul>
+    <p class="note">Preço por unidade. Retirada em Maringá ou envio por transportadora, com frete calculado para a sua cidade.</p>
+  </div>
+</section>
+
+<section class="qty" id="quantidade">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para empresas e redes</span>
+      <h2>Quanto mais bandeiras, menor o preço</h2>
+      <p class="lede">Preço por unidade no Pix, no mesmo pedido.</p>
+    </div>
+    <div class="tbl-wrap" tabindex="0" role="region" aria-label="Tabela de preços por quantidade">
+      <table>
+        <thead><tr><th scope="col">Quantidade</th><th scope="col">Desconto</th><th scope="col">2,15 m</th><th scope="col">3,00 m</th><th scope="col">3,50 m</th></tr></thead>
+        <tbody>
+          <tr><td>1 a 10</td><td>tabela</td><td>R$229,90</td><td>R$249,90</td><td>R$329,90</td></tr>
+          <tr><td>11 a 20</td><td><b>5%</b></td><td>R$218,40</td><td>R$237,40</td><td>R$313,40</td></tr>
+          <tr><td>21 a 99</td><td><b>8%</b></td><td>R$211,50</td><td>R$229,90</td><td>R$303,50</td></tr>
+          <tr><td>100 ou mais</td><td colspan="4" style="text-align:right">proposta sob medida</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Enviamos proposta formal com CNPJ e emitimos nota fiscal. <a data-wa="Preciso de uma proposta de wind banner para empresa" href="https://wa.me/5544998026357" target="_blank" rel="noopener">Pedir proposta pelo WhatsApp</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">O que vem na bandeira</span>
+      <h2>Feita para o dia a dia da loja</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item"><h3>Fibra de vidro</h3><p>Haste de fibra de vidro no lugar da haste de alumínio oca.</p></div>
+      <div class="tech-item"><h3>Dupla face</h3><p>Sua marca aparece dos dois lados, em tecido lavável estampado por sublimação, sem limite de cores.</p></div>
+      <div class="tech-item"><h3>Base firme</h3><p>Você enche com água ou areia para dar estabilidade em dia de vento.</p></div>
+      <div class="tech-item"><h3>Montagem fácil</h3><p>Chega pronta para montar na frente da loja ou no evento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Feitos aqui</span>
+      <h2>Marcas que já estão na rua</h2>
+      <p class="lede">Arraste para ver mais. Cada um com a arte do cliente ajustada pela nossa equipe.</p>
+    </div>
+    <div class="strip" tabindex="0" role="region" aria-label="Galeria de wind banners produzidos">
+      <figure><img src="../f-acai.webp" alt="Wind banner roxo de açaí" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-energiasolar.webp" alt="Wind banner verde de energia solar" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-testdrive.webp" alt="Wind banner vinho escrito Test Drive" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-papelaria.webp" alt="Wind banner rosa de papelaria" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-embalagens.webp" alt="Wind banner vermelho e amarelo de embalagens" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-tintas.webp" alt="Wind banner de loja de tintas" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-restaurante.webp" alt="Wind banner preto e vermelho de restaurante" width="240" height="844" loading="lazy"></figure>
+      <figure><img src="../f-sushi.webp" alt="Wind banner laranja de restaurante japonês" width="240" height="844" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do WhatsApp à sua porta</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Mande a logo</h3><p>Pelo WhatsApp, com o tamanho, a quantidade e a sua cidade.</p></li>
+      <li><h3>Ajustamos a arte</h3><p>Encaixamos no molde da bandeira, sem custo, e você aprova a imagem final.</p></li>
+      <li><h3>Produção</h3><p>8 dias úteis depois da arte aprovada.</p></li>
+      <li><h3>Entrega</h3><p>Retire em Maringá ou receba por transportadora em qualquer cidade do Brasil.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="social">
+  <div class="wrap">
+    <div class="score"><b>4,9</b><span>★★★★★ · 43 avaliações no Google</span></div>
+    <div class="reviews">
+      <figure class="review"><span class="stars" aria-label="5 estrelas">★★★★★</span><blockquote>Qualidade do material excelente! Suporte em fibra de vidro excelente!</blockquote><figcaption>João Leonardo · Google</figcaption></figure>
+      <figure class="review"><span class="stars" aria-label="5 estrelas">★★★★★</span><blockquote>Trabalho excelente, entregaram dentro do prazo.</blockquote><figcaption>Paulo Eduardo · Google</figcaption></figure>
+      <figure class="review"><span class="stars" aria-label="5 estrelas">★★★★★</span><blockquote>Ótima qualidade e atenção no atendimento!</blockquote><figcaption>Carla Araújo · Google</figcaption></figure>
+    </div>
+    <div class="logos" aria-label="Marcas atendidas">
+      <div class="lg"><img src="../c-sumitomo.webp" alt="Sumitomo Chemical" loading="lazy" width="162" height="46"></div>
+      <div class="lg"><img src="../c-sicredi.webp" alt="Sicredi" loading="lazy" width="64" height="46"></div>
+      <div class="lg"><img src="../c-sicoob.webp" alt="Sicoob" loading="lazy" width="80" height="46"></div>
+      <div class="lg"><img src="../c-ceva.webp" alt="Ceva Saúde Animal" loading="lazy" width="65" height="46"></div>
+      <div class="lg"><img src="../c-skyfit.webp" alt="Skyfit Academia" loading="lazy" width="50" height="46"></div>
+    </div>
+  </div>
+</section>
+
+<section class="swap">
+  <div class="wrap">
+    <div>
+      <h2>Já tem a haste? Troque só o tecido.</h2>
+      <p>Tecido novo com a sua marca, aproveitando a haste e a base que você já tem: 2,15 m por R$99, 3 m por R$119 e 3,50 m por R$149, no Pix.</p>
+    </div>
+    <a class="btn btn-wa" data-wa="Quero trocar só o tecido do meu wind banner" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Trocar o tecido</a>
+  </div>
+</section>
+
+<section id="perguntas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Perguntas</span>
+      <h2>Antes de pedir</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Não tenho a arte pronta. E agora?</summary><p>Mande a sua logo. Nossa equipe encaixa no molde da bandeira, sem custo, e envia a imagem final para você aprovar.</p></details>
+      <details><summary>Qual é o prazo?</summary><p>8 dias úteis depois da arte aprovada. O transporte até a sua cidade conta à parte.</p></details>
+      <details><summary>Como é o pagamento?</summary><p>Antecipado, no Pix ou em até 3x no cartão pelos valores da tabela.</p></details>
+      <details><summary>Emite nota fiscal?</summary><p>Sim. Enviamos proposta formal com CNPJ para empresas e órgãos públicos.</p></details>
+      <details><summary>Entrega na minha cidade?</summary><p>Enviamos para todo o Brasil por transportadora, com frete calculado no orçamento. Em Maringá, você também pode retirar com a gente.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <h2 id="end-t">Garanta sua bandeira antes da Black Friday</h2>
+    <p>Mande a sua logo, o tamanho e a quantidade. A gente responde com o orçamento.</p>
+    <a class="btn btn-wa" data-wa="Quero um orçamento de wind banner" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Pigmento Print Estamparia e Impressão Digital · CNPJ 27.175.159/0001-01</p>
+    <p class="mono">Rua Bernardino de Campos, 930 · Zona 07 · Maringá-PR · Segunda a sexta, 9h às 17h, com agendamento · Retiradas 10h–12h e 13h30–16h45</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <span>3 m por <b>R$249,90</b> no Pix</span>
+  <a class="btn btn-wa" data-wa="Quero um orçamento de wind banner" href="https://wa.me/5544998026357" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçamento</a>
+</div>
+
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  /* origem do clique: ?o=google, ?o=meta, ?o=qr ou ?o=email entra na mensagem para medir de onde veio o contato */
+  var cod={google:'G',meta:'M',qr:'Q',email:'E'}[q.get('o')]||'S';
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.href='https://wa.me/5544998026357?text='+encodeURIComponent('Olá! '+a.getAttribute('data-wa')+'. (página nov/'+cod+')');
+  });
+  /* prazo: troca sozinho de Black Friday para Natal e depois sai. ?d=AAAA-MM-DD só para testar. */
+  var hoje=q.get('d')?new Date(q.get('d')+'T12:00:00-03:00'):new Date();
+  var F=[
+    {ate:'2026-11-10',nome:'Black Friday',lim:'10/11',pronto:'23/11',h1:'Sua loja vista de longe na <em>Black Friday</em>',fim:'Garanta sua bandeira antes da Black Friday'},
+    {ate:'2026-12-08',nome:'Natal',lim:'08/12',pronto:'18/12',h1:'Sua loja vista de longe no <em>Natal</em>',fim:'Garanta sua bandeira antes do Natal'}
+  ];
+  var f=F.filter(function(x){return hoje<=new Date(x.ate+'T23:59:59-03:00')})[0];
+  var bar=document.getElementById('deadline');
+  if(!f){bar.style.display='none';document.getElementById('hero-t').innerHTML='Sua loja vista <em>de longe</em>';document.getElementById('end-t').textContent='Peça a sua bandeira';return}
+  document.getElementById('dl-main').innerHTML='<b>'+f.nome+':</b> arte aprovada até <b>'+f.lim+'</b>, bandeira pronta até '+f.pronto;
+  document.getElementById('hero-t').innerHTML=f.h1;
+  document.getElementById('end-t').textContent=f.fim;
+  var dias=Math.floor((new Date(f.ate+'T23:59:59-03:00')-hoje)/864e5);
+  document.getElementById('dl-left').textContent=dias<1?'· último dia':'· faltam '+dias+' dias';
+})();
+</script>
+</body>
+</html>
