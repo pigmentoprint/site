@@ -16,7 +16,7 @@
 <link rel="preload" as="image" href="hero-flags.webp">
 <!-- Google Ads: mede o clique no botão do WhatsApp (conversão "Clique no WhatsApp", criada em 11/11/2026) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18554576959"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18554576959');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});try{if(localStorage.getItem('pp_cookies')==='sim')gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}catch(e){}gtag('js',new Date());gtag('config','AW-18554576959');</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pigmento Print Estamparia Digital","image":"https://pigmentoprint.com.br/hero-flags.webp","telephone":"+55 44 99802-6357","email":"vendas@pigmentoprint.com.br","url":"https://pigmentoprint.com.br/","address":{"@type":"PostalAddress","streetAddress":"Rua Bernardino de Campos, 930, Zona 07","addressLocality":"Maringá","addressRegion":"PR","postalCode":"87030-160","addressCountry":"BR"},"openingHours":"Mo-Fr 09:00-17:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"43"},"sameAs":["https://www.instagram.com/pigmentoprint/","https://www.facebook.com/pigmentoprintmaringa"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Não tenho a arte pronta. E agora?","acceptedAnswer":{"@type":"Answer","text":"Mande a sua logo. Nossa equipe encaixa no molde da bandeira, sem custo, e envia a imagem final para você aprovar."}},{"@type":"Question","name":"Qual é o prazo?","acceptedAnswer":{"@type":"Answer","text":"8 dias úteis depois da arte aprovada. O transporte até a sua cidade conta à parte."}},{"@type":"Question","name":"Qual tamanho eu escolho?","acceptedAnswer":{"@type":"Answer","text":"Para a calçada, o de 3 m é o mais pedido. Para recepção e ambientes internos, o de 2 m. Para feiras e eventos abertos, 3,50 m ou 4,40 m. Se ficar em dúvida, conte onde ele vai ficar e a gente indica."}},{"@type":"Question","name":"Como é o pagamento?","acceptedAnswer":{"@type":"Answer","text":"Antecipado, no Pix ou em até 3x no cartão."}},{"@type":"Question","name":"Emite nota fiscal?","acceptedAnswer":{"@type":"Answer","text":"Sim. Enviamos proposta formal com CNPJ para empresas e órgãos públicos."}},{"@type":"Question","name":"Entrega na minha cidade?","acceptedAnswer":{"@type":"Answer","text":"Enviamos para todo o Brasil por transportadora, com frete calculado no orçamento. Em Maringá, você também pode retirar com a gente."}},{"@type":"Question","name":"Já tenho a haste e a base. Dá para trocar só o tecido?","acceptedAnswer":{"@type":"Answer","text":"Dá. Diga o tamanho do seu wind banner e fazemos só o tecido novo."}}]}</script>
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
@@ -209,6 +209,14 @@ footer a{color:var(--band-fg)}
 /* botão flutuante */
 .float-wa{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .float-wa svg{width:32px;height:32px;fill:#fff}
+
+/* aviso de cookies */
+.ck{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(var(--ck-bottom,12px) + env(safe-area-inset-bottom,0px));z-index:40;max-width:min(420px,calc(100vw - 96px));background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:.88rem;line-height:1.45}
+.ck[hidden]{display:none}
+.ck p{margin:0 0 10px}
+.ck-b{display:flex;gap:8px;flex-wrap:wrap}
+.ck button{font:inherit;font-weight:700;border-radius:999px;padding:8px 16px;cursor:pointer;border:2px solid var(--line);background:transparent;color:var(--fg);min-height:40px}
+.ck button.ok{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 </style>
 
 </head>
@@ -482,6 +490,23 @@ footer a{color:var(--band-fg)}
   var F=[{ate:'2026-12-08',txt:'Natal: arte aprovada até 08/12, bandeira pronta até 18/12.'}];
   var f=F.filter(function(x){return hoje<=new Date(x.ate+'T23:59:59-03:00')})[0];
   if(f){document.getElementById('dl-main').textContent=f.txt;var l=document.getElementById('dl-link');if(q.get('o'))l.href='novembro/?o='+encodeURIComponent(q.get('o'));document.getElementById('deadline').hidden=false}
+})();
+</script>
+
+<div class="ck" id="ck" role="dialog" aria-label="Aviso de cookies" hidden>
+  <p>Usamos cookies do Google para saber se os nossos anúncios trazem contatos. Nada muda no seu orçamento se você recusar.</p>
+  <div class="ck-b"><button type="button" class="ok" id="ck-sim">Aceitar</button><button type="button" id="ck-nao">Recusar</button></div>
+</div>
+<script>
+(function(){
+  /* aviso de cookies: guarda a escolha neste aparelho e só libera os cookies de anúncio depois do aceite */
+  var ck=document.getElementById('ck'),v=null;
+  try{v=localStorage.getItem('pp_cookies')}catch(e){}
+  if(!v)ck.hidden=false;
+  function escolhe(x){try{localStorage.setItem('pp_cookies',x)}catch(e){}ck.hidden=true;
+    if(x==='sim'&&window.gtag)gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}
+  document.getElementById('ck-sim').addEventListener('click',function(){escolhe('sim')});
+  document.getElementById('ck-nao').addEventListener('click',function(){escolhe('nao')});
 })();
 </script>
 
