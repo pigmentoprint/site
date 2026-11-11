@@ -14,6 +14,9 @@
 <meta property="og:locale" content="pt_BR">
 <link rel="icon" href="favicon.png">
 <link rel="preload" as="image" href="hero-flags.webp">
+<!-- Google Ads: mede o clique no botão do WhatsApp (conversão "Clique no WhatsApp", criada em 11/11/2026) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18554576959"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18554576959');</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pigmento Print Estamparia Digital","image":"https://pigmentoprint.com.br/hero-flags.webp","telephone":"+55 44 99802-6357","email":"vendas@pigmentoprint.com.br","url":"https://pigmentoprint.com.br/","address":{"@type":"PostalAddress","streetAddress":"Rua Bernardino de Campos, 930, Zona 07","addressLocality":"Maringá","addressRegion":"PR","postalCode":"87030-160","addressCountry":"BR"},"openingHours":"Mo-Fr 09:00-17:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"43"},"sameAs":["https://www.instagram.com/pigmentoprint/","https://www.facebook.com/pigmentoprintmaringa"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Não tenho a arte pronta. E agora?","acceptedAnswer":{"@type":"Answer","text":"Mande a sua logo. Nossa equipe encaixa no molde da bandeira, sem custo, e envia a imagem final para você aprovar."}},{"@type":"Question","name":"Qual é o prazo?","acceptedAnswer":{"@type":"Answer","text":"8 dias úteis depois da arte aprovada. O transporte até a sua cidade conta à parte."}},{"@type":"Question","name":"Qual tamanho eu escolho?","acceptedAnswer":{"@type":"Answer","text":"Para a calçada, o de 3 m é o mais pedido. Para recepção e ambientes internos, o de 2 m. Para feiras e eventos abertos, 3,50 m ou 4,40 m. Se ficar em dúvida, conte onde ele vai ficar e a gente indica."}},{"@type":"Question","name":"Como é o pagamento?","acceptedAnswer":{"@type":"Answer","text":"Antecipado, no Pix ou em até 3x no cartão."}},{"@type":"Question","name":"Emite nota fiscal?","acceptedAnswer":{"@type":"Answer","text":"Sim. Enviamos proposta formal com CNPJ para empresas e órgãos públicos."}},{"@type":"Question","name":"Entrega na minha cidade?","acceptedAnswer":{"@type":"Answer","text":"Enviamos para todo o Brasil por transportadora, com frete calculado no orçamento. Em Maringá, você também pode retirar com a gente."}},{"@type":"Question","name":"Já tenho a haste e a base. Dá para trocar só o tecido?","acceptedAnswer":{"@type":"Answer","text":"Dá. Diga o tamanho do seu wind banner e fazemos só o tecido novo."}}]}</script>
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
@@ -472,6 +475,8 @@ footer a{color:var(--band-fg)}
     if(a.id==='si-cta')return;
     var u=new URL(a.href);u.searchParams.set('text',(u.searchParams.get('text')||'Olá!')+sfx);a.href=u.toString();
   });
+  /* conta no Google Ads cada clique em botão do WhatsApp */
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="https://wa.me/"]');if(a&&window.gtag)gtag('event','conversion',{send_to:'AW-18554576959/oiVdCPLovrYdEL_AwY9F'})},true);
   /* faixa de prazo: aparece até a data-limite e some sozinha. ?d=AAAA-MM-DD só para testar. */
   var hoje=q.get('d')?new Date(q.get('d')+'T12:00:00-03:00'):new Date();
   var F=[{ate:'2026-12-08',txt:'Natal: arte aprovada até 08/12, bandeira pronta até 18/12.'}];
