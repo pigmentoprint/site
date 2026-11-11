@@ -4,15 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wind Banner Personalizado em Maringá | Pigmento Print</title>
-<meta name="description" content="Wind banners personalizados com haste de fibra de vidro, tecido dupla face e base para vento. 2 m, 3 m, 3,50 m e 4,40 m. Produção em 7 a 8 dias úteis, envio para todo o Brasil. Pigmento Print, Maringá-PR, mais de 10 anos de experiência.">
+<meta name="description" content="Wind banners personalizados com haste de fibra de vidro, tecido dupla face e base para vento. 2 m, 3 m, 3,50 m e 4,40 m. Produção em 8 dias úteis depois da arte aprovada, envio para todo o Brasil. Pigmento Print, Maringá-PR, mais de 10 anos de experiência.">
 <link rel="canonical" href="https://pigmentoprint.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wind banners personalizados | Pigmento Print">
 <meta property="og:description" content="Haste de fibra de vidro, dupla face, base para vento. Orçamento pelo WhatsApp (44) 99802-6357.">
 <meta property="og:image" content="https://pigmentoprint.com.br/hero-flags.webp">
+<meta property="og:url" content="https://pigmentoprint.com.br/">
 <meta property="og:locale" content="pt_BR">
 <link rel="icon" href="favicon.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pigmento Print Estamparia Digital","image":"https://pigmentoprint.com.br/hero-flags.webp","telephone":"+55 44 99802-6357","email":"vendas@pigmentoprint.com.br","url":"https://pigmentoprint.com.br/","address":{"@type":"PostalAddress","streetAddress":"Rua Bernardino de Campos, 928, Zona 07","addressLocality":"Maringá","addressRegion":"PR","postalCode":"87030-160","addressCountry":"BR"},"openingHours":"Mo-Fr 09:00-17:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"43"},"sameAs":["https://www.instagram.com/pigmentoprint/"]}</script>
+<link rel="preload" as="image" href="hero-flags.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pigmento Print Estamparia Digital","image":"https://pigmentoprint.com.br/hero-flags.webp","telephone":"+55 44 99802-6357","email":"vendas@pigmentoprint.com.br","url":"https://pigmentoprint.com.br/","address":{"@type":"PostalAddress","streetAddress":"Rua Bernardino de Campos, 930, Zona 07","addressLocality":"Maringá","addressRegion":"PR","postalCode":"87030-160","addressCountry":"BR"},"openingHours":"Mo-Fr 09:00-17:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"43"},"sameAs":["https://www.instagram.com/pigmentoprint/","https://www.facebook.com/pigmentoprintmaringa"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Não tenho a arte pronta. E agora?","acceptedAnswer":{"@type":"Answer","text":"Mande a sua logo. Nossa equipe encaixa no molde da bandeira, sem custo, e envia a imagem final para você aprovar."}},{"@type":"Question","name":"Qual é o prazo?","acceptedAnswer":{"@type":"Answer","text":"8 dias úteis depois da arte aprovada. O transporte até a sua cidade conta à parte."}},{"@type":"Question","name":"Qual tamanho eu escolho?","acceptedAnswer":{"@type":"Answer","text":"Para a calçada, o de 3 m é o mais pedido. Para recepção e ambientes internos, o de 2 m. Para feiras e eventos abertos, 3,50 m ou 4,40 m. Se ficar em dúvida, conte onde ele vai ficar e a gente indica."}},{"@type":"Question","name":"Como é o pagamento?","acceptedAnswer":{"@type":"Answer","text":"Antecipado, no Pix ou em até 3x no cartão."}},{"@type":"Question","name":"Emite nota fiscal?","acceptedAnswer":{"@type":"Answer","text":"Sim. Enviamos proposta formal com CNPJ para empresas e órgãos públicos."}},{"@type":"Question","name":"Entrega na minha cidade?","acceptedAnswer":{"@type":"Answer","text":"Enviamos para todo o Brasil por transportadora, com frete calculado no orçamento. Em Maringá, você também pode retirar com a gente."}},{"@type":"Question","name":"Já tenho a haste e a base. Dá para trocar só o tecido?","acceptedAnswer":{"@type":"Answer","text":"Dá. Diga o tamanho do seu wind banner e fazemos só o tecido novo."}}]}</script>
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 
 
@@ -170,6 +173,18 @@ section{padding-block:88px}
 .prod h3{font-size:1.5rem;text-transform:uppercase;color:var(--ink)}
 .prod p{margin:0;color:var(--muted);font-size:.95rem}
 
+/* perguntas */
+.faq{display:grid;gap:10px;max-width:800px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px}
+.faq summary{font-weight:700;cursor:pointer;padding:14px 0;list-style-position:outside}
+.faq p{margin:0 0 16px;color:var(--muted)}
+
+/* aviso de prazo */
+.deadline{background:var(--pigment);color:#fff;font-size:.95rem;text-align:center}
+.deadline .wrap{padding-block:8px}
+.deadline a{color:#fff;font-weight:700}
+.deadline[hidden]{display:none}
+
 /* b2b */
 .b2b{background:var(--teal);color:#fff}
 .b2b .wrap{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
@@ -199,6 +214,8 @@ footer a{color:var(--band-fg)}
   <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
 </svg>
 
+<div class="deadline" id="deadline" hidden><div class="wrap"><span id="dl-main"></span> <a id="dl-link" href="novembro/">Ver tamanhos e valores</a></div></div>
+
 <header class="top">
   <div class="wrap">
     <a href="#inicio" aria-label="Pigmento Print, início"><img src="logo-branco.webp" alt="Pigmento Print" width="173" height="26"></a>
@@ -207,6 +224,7 @@ footer a{color:var(--band-fg)}
       <a href="#ficha">Ficha técnica</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#produtos">Outros produtos</a>
+      <a href="#perguntas">Perguntas</a>
       <a href="#contato">Contato</a>
     </nav>
     <a class="btn btn-wa" href="https://wa.me/5544998026357?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20wind%20banner." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Orçamento</a>
@@ -219,7 +237,7 @@ footer a{color:var(--band-fg)}
     <div class="hero-copy">
       <span class="eyebrow">Estamparia digital · Maringá-PR · mais de 10 anos de experiência</span>
       <h1>Sua marca <em>hasteada</em> na porta da loja</h1>
-      <p>Wind banners personalizados com haste de fibra de vidro, tecido dupla face e base que segura em dia de vento. Produção em 7 a 8 dias úteis e envio para todo o Brasil.</p>
+      <p>Wind banners personalizados com haste de fibra de vidro, tecido dupla face e base que segura em dia de vento. Produção em 8 dias úteis depois da arte aprovada e envio para todo o Brasil.</p>
       <div class="hero-ctas">
         <a class="btn btn-wa" href="https://wa.me/5544998026357?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20wind%20banner." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
         <a class="btn btn-ghost" href="#tamanhos">Ver os tamanhos</a>
@@ -308,7 +326,7 @@ footer a{color:var(--band-fg)}
       <li><h3>Mande a arte</h3><p>Envie sua logo ou a arte pronta pelo WhatsApp e diga o tamanho e a quantidade.</p></li>
       <li><h3>Ajustamos no gabarito</h3><p>Nossa equipe encaixa sua arte no molde do wind banner, sem custo.</p></li>
       <li><h3>Você aprova</h3><p>Mandamos a imagem final para você conferir antes de imprimir.</p></li>
-      <li><h3>Produção</h3><p>Estampamos e montamos em 7 a 8 dias úteis após a aprovação.</p></li>
+      <li><h3>Produção</h3><p>Estampamos e montamos em 8 dias úteis depois da arte aprovada.</p></li>
       <li><h3>Entrega</h3><p>Retire em Maringá ou receba em qualquer cidade do Brasil por transportadora.</p></li>
     </ol>
   </div>
@@ -350,6 +368,24 @@ footer a{color:var(--band-fg)}
   </div>
 </section>
 
+<section id="perguntas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Perguntas</span>
+      <h2>Antes de pedir</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Não tenho a arte pronta. E agora?</summary><p>Mande a sua logo. Nossa equipe encaixa no molde da bandeira, sem custo, e envia a imagem final para você aprovar.</p></details>
+      <details><summary>Qual é o prazo?</summary><p>8 dias úteis depois da arte aprovada. O transporte até a sua cidade conta à parte.</p></details>
+      <details><summary>Qual tamanho eu escolho?</summary><p>Para a calçada, o de 3 m é o mais pedido. Para recepção e ambientes internos, o de 2 m. Para feiras e eventos abertos, 3,50 m ou 4,40 m. Se ficar em dúvida, conte onde ele vai ficar e a gente indica.</p></details>
+      <details><summary>Como é o pagamento?</summary><p>Antecipado, no Pix ou em até 3x no cartão.</p></details>
+      <details><summary>Emite nota fiscal?</summary><p>Sim. Enviamos proposta formal com CNPJ para empresas e órgãos públicos.</p></details>
+      <details><summary>Entrega na minha cidade?</summary><p>Enviamos para todo o Brasil por transportadora, com frete calculado no orçamento. Em Maringá, você também pode retirar com a gente.</p></details>
+      <details><summary>Já tenho a haste e a base. Dá para trocar só o tecido?</summary><p>Dá. Diga o tamanho do seu wind banner e fazemos só o tecido novo.</p></details>
+    </div>
+  </div>
+</section>
+
 <section class="b2b">
   <div class="wrap">
     <div style="display:grid;gap:14px;min-width:0">
@@ -366,7 +402,7 @@ footer a{color:var(--band-fg)}
     <div>
       <img src="logo-branco.webp" alt="Pigmento Print" width="200" height="30" style="margin-bottom:16px">
       <p>Estamparia digital especializada em wind banners personalizados, com mais de 10 anos de experiência.</p>
-      <p class="mono">Rua Bernardino de Campos, 928 · Zona 07 · Maringá-PR · 87030-160</p>
+      <p class="mono">Rua Bernardino de Campos, 930 · Zona 07 · Maringá-PR · 87030-160</p>
     </div>
     <div>
       <h3>Fale com a gente</h3>
@@ -389,11 +425,14 @@ footer a{color:var(--band-fg)}
 <script>
 (function(){
   var S=[
-    {h:2,  lbl:'2 m',   tag:'Ambientes internos', title:'Shopping e ponto de venda', text:'Para lugares com espaço limitado: shopping, praça de alimentação, recepção, academia e corredor de supermercado.', art:'1,75 × 0,65 m'},
+    {h:2,  lbl:'2 m',   tag:'Ambientes internos', title:'Recepção e ponto de venda', text:'Para lugares com espaço limitado: recepção, academia, corredor de supermercado e balcão de atendimento.', art:'1,75 × 0,65 m'},
     {h:3,  lbl:'3 m',   tag:'O mais vendido', title:'Frente de loja', text:'O tamanho certo para a calçada. Aparece de longe para quem passa de carro e chama o cliente para dentro.', art:'2,00 × 0,65 m'},
     {h:3.5,lbl:'3,50 m',tag:'Áreas abertas', title:'Eventos, feiras e praias', text:'Para feiras, shows, parques e praias, onde sua marca precisa ser vista a uma boa distância.', art:'2,75 × 0,65 m'},
     {h:4.4,lbl:'4,40 m',tag:'Grande porte', title:'Eventos com muitas marcas', text:'Para ficar acima das outras bandeiras em eventos de grande público, quando o impacto visual é o que importa.', art:'sob consulta'}
   ];
+  /* origem do clique: ?o=google, ?o=meta, ?o=qr, ?o=email ou ?o=gmb entra na mensagem do WhatsApp para medir de onde veio o contato */
+  var q=new URLSearchParams(location.search);
+  var sfx=' (site/'+({google:'G',meta:'M',qr:'Q',email:'E',gmb:'P'}[q.get('o')]||'S')+')';
   var NS='http://www.w3.org/2000/svg', svg=document.getElementById('ruler');
   var G=470, U=100, X0=70; /* chão em y=470, 100 unidades por metro */
   function el(t,a,p){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
@@ -425,10 +464,19 @@ footer a{color:var(--band-fg)}
     document.getElementById('si-text').textContent=s.text;
     document.getElementById('si-h').textContent='Altura total: '+s.lbl;
     document.getElementById('si-art').textContent='Área da arte: '+s.art;
-    document.getElementById('si-cta').href='https://wa.me/5544998026357?text='+encodeURIComponent('Olá! Quero um orçamento de wind banner de '+s.lbl+'.');
+    document.getElementById('si-cta').href='https://wa.me/5544998026357?text='+encodeURIComponent('Olá! Quero um orçamento de wind banner de '+s.lbl+'.'+sfx);
     document.querySelector('#si-cta span').textContent='Orçar o de '+s.lbl;
   }
   pick(1);
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){
+    if(a.id==='si-cta')return;
+    var u=new URL(a.href);u.searchParams.set('text',(u.searchParams.get('text')||'Olá!')+sfx);a.href=u.toString();
+  });
+  /* faixa de prazo: aparece até a data-limite e some sozinha. ?d=AAAA-MM-DD só para testar. */
+  var hoje=q.get('d')?new Date(q.get('d')+'T12:00:00-03:00'):new Date();
+  var F=[{ate:'2026-12-08',txt:'Natal: arte aprovada até 08/12, bandeira pronta até 18/12.'}];
+  var f=F.filter(function(x){return hoje<=new Date(x.ate+'T23:59:59-03:00')})[0];
+  if(f){document.getElementById('dl-main').textContent=f.txt;var l=document.getElementById('dl-link');if(q.get('o'))l.href='novembro/?o='+encodeURIComponent(q.get('o'));document.getElementById('deadline').hidden=false}
 })();
 </script>
 
