@@ -170,6 +170,9 @@ footer p{margin:0 0 6px}
 .sticky span b{color:var(--gold)}
 .sticky .btn{padding:10px 18px;min-height:44px;font-size:.95rem;white-space:nowrap}
 </style>
+<!-- Google Ads: mede o clique no botão do WhatsApp (conversão "Clique no WhatsApp", criada em 11/11/2026) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18554576959"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18554576959');</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -381,10 +384,12 @@ footer p{margin:0 0 6px}
 (function(){
   var q=new URLSearchParams(location.search);
   /* origem do clique: ?o=google, ?o=meta, ?o=qr ou ?o=email entra na mensagem para medir de onde veio o contato */
-  var cod={google:'G',meta:'M',qr:'Q',email:'E'}[q.get('o')]||'S';
+  var cod={google:'G',meta:'M',qr:'Q',email:'E',gmb:'P'}[q.get('o')]||'S';
   document.querySelectorAll('[data-wa]').forEach(function(a){
     a.href='https://wa.me/5544998026357?text='+encodeURIComponent('Olá! '+a.getAttribute('data-wa')+'. (página nov/'+cod+')');
   });
+  /* conta no Google Ads cada clique em botão do WhatsApp */
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="https://wa.me/"]');if(a&&window.gtag)gtag('event','conversion',{send_to:'AW-18554576959/oiVdCPLovrYdEL_AwY9F'})},true);
   /* prazo: troca sozinho de Black Friday para Natal e depois sai. ?d=AAAA-MM-DD só para testar. */
   var hoje=q.get('d')?new Date(q.get('d')+'T12:00:00-03:00'):new Date();
   var F=[
